@@ -1,4 +1,4 @@
-#Estação de Trem em Miniatura em Assembly AVR com ATmega328P
+# Estação de Trem em Miniatura em Assembly AVR com ATmega328P
 
 Este é o código fonte e o circuito de um projeto de automação desenvolvido como trabalho das minhas aulas de engenharia da computação, construído em ASSEMBLY AVR para o microcontrolador ATMEGA328P.
 Ele simula e controla uma estação de trem em miniatura, com dois trens, desvios de trilho e paradas automáticas nas estações.
