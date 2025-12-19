@@ -1,7 +1,19 @@
-🚂 Ferrorama Automatizado – Projeto de Automação (2025)
+#Estação de Trem em Miniatura em Assembly AVR com ATmega328P
 
-Projeto desenvolvido no primeiro semestre de 2025, utilizando um ATmega328P-PU programado em C para controlar um sistema ferroviário automatizado. Os trilhos, trens e controles foram feitos em impressão 3D. O sistema conta com dois trens, cada um com seu próprio caminho, e os trilhos giram automaticamente através de servo motores para direcionar o trem correto no momento certo. Cada trem possui ímãs internos, e sensores de efeito Hall posicionados no trilho detectam a posição dos trens para sincronizar as mudanças de via.
+Este é o código fonte e o circuito de um projeto de automação desenvolvido como trabalho das minhas aulas de engenharia da computação, construído em ASSEMBLY AVR para o microcontrolador ATMEGA328P.
+Ele simula e controla uma estação de trem em miniatura, com dois trens, desvios de trilho e paradas automáticas nas estações.
 
-A maquete também inclui um acelerador físico impresso em 3D, onde empurrar para frente faz o trem avançar, puxar para trás faz o trem dar ré e o meio corresponde ao ponto morto. Além disso, há um freio de emergência que desliga os trens ao ser acionado. As impressões 3D tiveram algumas imperfeições que causaram descarrilamentos, mas o saldo do projeto foi muito positivo. Aprendi sobre timers, prescalers, controle de PWM do zero, leitura de sensores Hall e integração entre eletrônica e mecânica impressa em 3D.
+Driver de motor em ponte H para controlar dois trens individualmente.
+
+A energia é transmitida pela placa para os trens em movimento por meio de um Slip Ring.
+
+Quando um trem passa sobre um LDR, o servo motor correspondente gira, redirecionando automaticamente os trilhos.
+
+Outros 2 sensores LDR adicionais detectam quando um trem chega à estação, parando o trem correspondente até que o outro se aproxime.
+
+4 servo motores controlados via PWM gerado por software.
+
+Velocidade totalmente controlável e reversão completa por meio de um potenciômetro.
 
 🎥 Vídeo do projeto: https://youtu.be/FEgj6yQy-WY
+<img width="899" height="589" alt="image" src="https://github.com/user-attachments/assets/c859b046-7d3f-4a7f-8568-5ca56e0f3855" />
